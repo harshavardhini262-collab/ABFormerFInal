@@ -1,0 +1,33 @@
+# ABFormer — Streamlit Community Cloud requirements
+# CPU-only build (Streamlit Cloud has no GPU)
+
+streamlit>=1.35.0
+
+# Deep learning (CPU wheels — no CUDA suffix needed on Streamlit Cloud)
+torch==2.2.2
+torchvision==0.17.2
+
+# Protein language model
+fair-esm==2.0.0
+
+# Antibody structure prediction
+igfold==0.4.0
+
+# Antibody numbering
+abnumber==0.4.4
+
+# Chemistry
+rdkit-pypi==2022.9.5
+
+# Transformers (for BertConfig / BertTokenizer used in inference.py)
+transformers==4.40.0
+tokenizers==0.19.1
+
+# General
+numpy==1.26.4
+pandas==2.2.2
+scikit-learn==1.4.2
+scipy==1.13.0
+tqdm==4.66.4
+pyyaml==6.0.1
+requests==2.32.3
